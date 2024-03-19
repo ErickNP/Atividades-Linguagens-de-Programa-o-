@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+    <form action="https://65f893a8df151452460fb791.mockapi.io/api/ex/FormularioEscola" method="post">
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+            <p>
+                <label for="nomeAluno">Nome Completo*</label>
+                <input type="text" name="nomeAluno" id="nomeAluno" required>
+            </p>
+            <p>
+                <label for="enderecoAluno">Endereço*</label>
+                <input type="text" name="enderecoAluno" id="enderecoAluno" required>
+                <label for="numeroCasaAluno">Número</label>
+                <input type="text" name="numeroCasaAluno" id="numeroCasaAluno">
+                <label for="cepAluno">CEP*</label>
+                <input type="text" name="cepAluno" id="cepAluno" required>
+            </p>
+            <p>
+                <label for="bairroAluno">Bairro*</label>
+                <input type="text" name="bairroAluno" id="bairroAluno" required>
+                <label for="cidadeAluno">Cidade*</label>
+                <input type="text" name="cidadeAluno" id="cidadeAluno" required>
+                <label for="estadoAluno">Estado*</label>
+                <select name="estadoAluno" id="estadoAluno" required>
+                    <optgroup label="Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="telefoneAluno">Telefone*</label>
+                <input type="tel" name="telefoneAluno" id="telefoneAluno" required>
+                <label for="celularAluno">Celular*</label>
+                <input type="tel" name="celularAluno" id="celularAluno" required>
+                <label for="emailAluno">E-mail*</label>
+                <input type="email" name="emailAluno" id="emailAluno" required>
+            </p>
+            <p>
+                <label for="corAluno">Cor*</label>
+                <select name="corAluno" id="corAluno" required>
+                    <option value="Branca">Branca</option>
+                    <option value="Preta">Preta</option>
+                    <option value="Parda">Parda</option>
+                    <option value="Amarela">Amarela</option>
+                    <option value="Indígena">Indígena</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <!-- Dados do Pai -->
+        <fieldset>
+            <legend>Dados do Pai</legend>
+            <p>
+                <label for="nomePai">Nome Completo*</label>
+                <input type="text" name="nomePai" id="nomePai" required>
+            </p>
+            <p>
+                <label for="nascPai">Data de Nascimento</label>
+                <input type="date" name="nascPai" id="nascPai">
+                <label for="naturalidadePai">Naturalidade</label>
+                <input type="text" name="naturalidadePai" id="naturalidadePai">
+            </p>
+            <p>
+                <label>Grau de Instrução</label><br>
+                <input type="radio" name="instrucaoPai" value="Fundamental Incompleto"> <label for="medioIncompleto">
+                    Fundamental Incompleto</label><br>
+                <input type="radio" name="instrucaoPai" value="Fundamental Completo"> <label for="medioCompleto">
+                    Fundamental Completo</label><br>
+                <input type="radio" name="instrucaoPai" value="Médio Incompleto"> <label for="medioIncompleto"> Médio
+                    Incompleto</label><br>
+                <input type="radio" name="instrucaoPai" value="Médio Completo"> <label for="medioCompleto"> Médio
+                    Completo</label><br>
+                <input type="radio" name="instrucaoPai" value="Superior Incompleto"> <label for="superiorIncompleto">
+                    Superior Incompleto</label><br>
+                <input type="radio" name="instrucaoPai" value="Superior Completo"> <label for="superiorCompleto">
+                    Superior Completo</label>
+            </p>
+            <p>
+                <label for="profissaoPai">Profissão</label>
+                <input type="text" name="profissaoPai" id="profissaoPai" required>
+                <label for="cpfPai">CPF*</label>
+                <input type="text" name="cpfPai" id="cpfPai" required>
+            </p>
+            <p>
+                <label for="telefonePai">Telefone</label>
+                <input type="tel" name="telefonePai" id="telefonePai">
+                <label for="celularPai">Celular*</label>
+                <input type="tel" name="celularPai" id="celularPai" required>
+                <label for="emailPai">E-mail*</label>
+                <input type="email" name="emailPai" id="emailPai" required>
+            </p>
+            <p>
+                <label for="respFinanceiroPai">Responsável Financeiro*</label><br>
+                <input type="radio" name="respFinanceiroPai" value="Sim"> <label for="sim">Sim</label><br>
+                <input type="radio" name="respFinanceiroPai" value="Não"> <label for="não">Não</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da Mãe</legend>
+            <p>
+                <label for="nomeMae">Nome Completo*</label>
+                <input type="text" name="nomeMae" id="nomeMae" required>
+            </p>
+            <p>
+                <label for="nascMae">Data de Nascimento</label>
+                <input type="date" name="nascMae" id="nascMae">
+                <label for="naturalidadeMae">Naturalidade</label>
+                <input type="text" name="naturalidadeMae" id="naturalidadeMae">
+            </p>
+            <p>
+                <label>Grau de Instrução</label><br>
+                <input type="radio" name="instrucaoMae" value="Fundamental Incompleto"> <label
+                    for="medioIncompleto">Fundamental Incompleto</label><br>
+                <input type="radio" name="instrucaoMae" value="Fundamental Completo"> <label for="medioCompleto">
+                    Fundamental Completo</label><br>
+                <input type="radio" name="instrucaoMae" value="Médio Incompleto"> <label for="medioIncompleto"> Médio
+                    Incompleto</label><br>
+                <input type="radio" name="instrucaoMae" value="Médio Completo"> <label for="medioCompleto"> Médio
+                    Completo</label><br>
+                <input type="radio" name="instrucaoMae" value="Superior Incompleto"> <label for="superiorIncompleto">
+                    Superior Incompleto</label><br>
+                <input type="radio" name="instrucaoMae" value="Superior Completo"> <label for="superiorCompleto">
+                    Superior Completo</label>
+            </p>
+            <p>
+                <label for="profissaoMae">Profissão*</label>
+                <input type="text" name="profissaoMae" id="profissaoMae" required>
+                <label for="cpfMae">CPF*</label>
+                <input type="text" name="cpfMae" id="cpfMae" required>
+            </p>
+            <p>
+                <label for="telefoneMae">Telefone</label>
+                <input type="tel" name="telefoneMae" id="telefoneMae">
+                <label for="celularMae">Celular*</label>
+                <input type="tel" name="celularMae" id="celularMae" required>
+                <label for="emailMae">E-mail*</label>
+                <input type="email" name="emailMae" id="emailMae" required>
+            </p>
+            <p>
+                <label for="respFinanceiroMae">Responsável Financeiro*</label><br>
+                <input type="radio" name="respFinanceiroMae" value="Sim"> <label for="sim">Sim</label><br>
+                <input type="radio" name="respFinanceiroMae" value="Não"> <label for="não">Não</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Curso</legend>
+            <p>
+                <label for="nomeCurso">Cursos*</label>
+                <select name="nomeCurso" id="nomeCurso" required>
+                    <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                    <option value="Engenharia Mecatrônica">Engenharia Mecatrônica</option>
+                    <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                </select>
+            </p>
+            <p>
+                <label for="dataIngresso">Data de Matrícula*</label>
+                <input type="datetime-local" name="dataIngresso" id="dataIngresso" required>
+            </p>
+            <p>
+                <label for="valor">Mensalidade*</label>
+                <input type="text" name="valor" id="valor" required>
+                <label for="formaDePagamento">Forma de Pagamento*</label>
+                <select name="formaDePagamento" id="formaDePagamento" required>
+                    <option value="à vista">À Vista</option>
+                    <option value="2x sem juros">2x sem juros</option>
+                    <option value="3x sem juros">3x sem juros</option>
+                    <option value="4x com juros">6x com juros</option>
+                    <option value="5x com juros">12x com juros</option>
+                    <option value="5x com juros">24x com juros</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+
+</html>
