@@ -1,0 +1,35 @@
+.titulo {
+
+    /* Não achei marrom claro */
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo:hover {
+
+    background-color: black;
+    transition: 700ms;
+}
+
+p {
+    text-indent: 20px;
+}
+
+body {
+
+    font-family: Arial;
+    padding: 50px 200px;
+}
+
+.titulo-conceitos-lista {
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lista-conceitos li {
+
+    text-align: justify;
+}
