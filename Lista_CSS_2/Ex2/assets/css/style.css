@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+
+    text-align: center;
+    position: fixed;
+}
+
+header a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+footer {
+
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.content {
+
+    position: absolute;
+    top: 58px;
+    left: 20%; 
+    margin-left: 20px; 
+}
+
+.barraLateral {
+
+    width: 20%;
+    height: 100vh;
+
+    background-color: black;
+    top: 58px;
+    left: 0;
+
+    position: fixed;
+}
+
+.barraLateral nav a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
