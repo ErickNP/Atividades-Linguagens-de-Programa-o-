@@ -1,0 +1,54 @@
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.divForm {
+    width: 250px;
+    height: 340px;
+    background-color: rgb(131, 151, 190);
+    border-radius: 30px;
+}
+
+.img-cadastro {
+
+    display: flex;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    margin-top: 10px;
+    mix-blend-mode: multiply;
+}
+
+.divForm form {
+
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.form-group label {
+
+    display: block;
+    margin-top: 10px;
+
+
+}
+
+.form-group input {
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
