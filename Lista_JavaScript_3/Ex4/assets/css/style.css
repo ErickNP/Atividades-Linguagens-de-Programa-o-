@@ -1,0 +1,24 @@
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.valor {
+
+    display: block;
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.botoes {
+
+    display: block;
+    margin-top: 10px;
+}
