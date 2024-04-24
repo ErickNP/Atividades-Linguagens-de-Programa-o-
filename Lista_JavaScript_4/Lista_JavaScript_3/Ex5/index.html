@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+
+<style>
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .valor {
+
+        display: block;
+        border: 3px solid black;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+
+    .botoes {
+
+        display: block;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+
+        <label for="input-text">Digite sua frase: </label>
+        <input type="text" name="input-text" id="input-text">
+
+        <div class="valor" id="valor">0</div>
+
+        <button class="botoes" onclick="contarCaracter(document.getElementById('input-text').value)">Contar
+            Caracteres</button>
+
+
+    </div>
+</body>
+
+<script>
+
+    function contarCaracter(frase) {
+
+        let tirarEspaco = frase.replace(/\s/g, "");
+
+        let numChar = tirarEspaco.length;
+
+        document.getElementById('valor').textContent = numChar;
+    }
+
+</script>
+
+</html>

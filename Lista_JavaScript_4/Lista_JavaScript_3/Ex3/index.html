@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+
+<style>
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .valor {
+
+        display: block;
+        border: 3px solid black;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <button onclick="addValor()">Contador</button>
+        <div class="valor" id="valor">0</div>
+
+    </div>
+
+
+</body>
+<script>
+
+    function addValor() {
+
+        let contador = parseInt(document.getElementById('valor').textContent);
+        contador++;
+        document.getElementById('valor').textContent = contador;
+    }
+</script>
+
+</html>

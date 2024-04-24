@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <style>
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Catálogo de Produtos</h1>
+    <table border="1px" cellspacing="0" cellpading="0">
+        <thead>
+            <th colspan="2"></th>
+            <th>Foto</th>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Qtde em <br>Estoque</th>
+            <th>Valor<br> Unitário</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><input type="checkbox" /></td>
+                <td> <img
+                        src="data:image/jpeg;base64,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">
+                </td>
+                <td>1</td>
+                <td>Mouse Laser com fio<br>Dell</td>
+                <td>5</td>
+                <td>R$ 179,00</td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" /></td>
+                <td><img
+                        src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/input-devices/dell/mouse/ms5320w/global-spi/ng/dell-multi-device-wireless-mouse-ms5320w-details-hero-500-ng.psd?fmt=jpg">
+                </td>
+                <td>2</td>
+                <td>Mouse Bluetooth Dell</td>
+                <td>6</td>
+                <td>R$ 338,00</td>
+
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" /></td>
+
+                <td><img
+                        src="https://images-americanas.b2w.io/produtos/2449379233/imagens/mouse-optico-usb-preto-100-6vy96aa-hp-bt-1-un/2449379268_1_large.jpg">
+                </td>
+                <td>3</td>
+                <td>Mouse óptico usb<br>preto 100</td>
+                <td>3</td>
+                <td>R$ 48,30</td>
+
+
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Descrição</h2>
+    <h3>Características do Produto</h3>
+    <label>Especificações</label>
+
+    <ul>
+        <li>Sensor óptico preciso com 1.600 DPI permite que você trabalhe na maioria das superfícies</li>
+        <li>Configuração USB rápida e fácil com cabo de 1,5m</li>
+        <li>Design ambidestro, produzido para caber de forma natural e perfeita na palma da sua mão</li>
+        <li>Três botões integrados</li>
+        <li>Ampla compatibilidade: Windows e Mac</li>
+    </ul>
+
+    <h3>Avaliação do produto</h3>
+
+    <dl>
+        <dt>José Aparecido
+
+        <dd>Muito Bom</dd>
+        </dt>
+        <br>
+        <dt>Joaquim Jorge
+        <dd>Bom</dd>
+        </dt>
+    </dl>
+
+</body>
+
+</html>

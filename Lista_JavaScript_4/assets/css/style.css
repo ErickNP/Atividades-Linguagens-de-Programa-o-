@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barraLateral {
+
+    color: white;
+
+    width: 20%;
+    height: 100vh;
+    background-color: dodgerblue;
+
+    float: left;
+    position: absolute;
+}
+
+.barraLateral nav a {
+
+    display: block;
+    padding: 10px 20px;
+
+}
+
+#conteudoPrincipal {
+
+    width: 80%;
+    height: 100vh;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    float: right;
+}

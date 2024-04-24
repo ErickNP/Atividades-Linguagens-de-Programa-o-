@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+
+</head>
+<style>
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .div-colorida {
+
+        border: 2px solid black;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+
+<body>
+
+    <div class="container">
+        <div class="div-colorida" id="div-colorida">
+            <button onclick="mudarCor(document.getElementById('div-colorida'))">Mudar de Cor</button>
+        </div>
+    </div>
+
+    
+    <script>
+
+        function mudarCor(elemento) {
+
+            let cores = ["red", "blue", "green", "yellow", "orange", "purple", "cyan", "magenta", "brown"];
+
+            let corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+
+            elemento.style.backgroundColor = corAleatoria;
+
+            console.log('Cor escolhida:', corAleatoria);
+
+        }
+    </script>
+</body>
+
+</html>

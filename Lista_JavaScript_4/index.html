@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23/04</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="barraLateral">
+
+        <nav>
+            <a onclick="abrirPag('Lista_HTML_3/Ex_01/index.html')" href="#">Tags HTML: Exercício 1</a>
+
+            <a onclick="abrirPag('Lista_HTML_3/Ex_02/index.html')" href="#">Tags HTML: Exercício 2</a>
+
+            <a onclick="abrirPag('Lista_CSS_1/index.html')" href="#">CSS Fundamentos: Exercício 1</a>
+
+            <a onclick="abrirPag('Lista_CSS_3/index.html')" href="#">FlexBox</a>
+
+            <a onclick="abrirPag('Lista_JavaScript_3/Ex1/index.html')" href="#">DOM: Exercício 1</a>
+
+            <a onclick="abrirPag('Lista_JavaScript_3/Ex2/index.html')" href="#">DOM: Exercício 2</a>
+
+            <a onclick="abrirPag('Lista_JavaScript_3/Ex3/index.html')" href="#">DOM: Exercício 3</a>
+
+            <a onclick="abrirPag('Lista_JavaScript_3/Ex4/index.html')" href="#">DOM: Exercício 4</a>
+
+            <a onclick="abrirPag('Lista_JavaScript_3/Ex5/index.html')" href="#">DOM: Exercício 5</a>
+
+
+
+
+        </nav>
+    </div>
+
+    <div id="conteudoPrincipal"></div>
+
+    <script>
+        function abrirPag(pagina) {
+
+            let conteudoPrincipal = document.getElementById('conteudoPrincipal');
+
+            fetch(pagina).then(response => response.text()).then(html => {
+
+                conteudoPrincipal.innerHTML = html;
+
+                const scripts = conteudoPrincipal.querySelectorAll('script');
+                scripts.forEach(script => {
+
+                    let novoScript = document.createElement('script');
+                    if (script.src) {
+                        novoScript.src = script.src;
+                    } else {
+                        novoScript.textContent = script.textContent;
+                    }
+                    document.body.appendChild(novoScript);
+
+                });
+            });
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
